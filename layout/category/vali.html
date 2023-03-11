@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel='icon' href='/images/website/logo/icon-logo.png'/>
+    <title>Bronx Luggage</title>
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Normalize css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="/css/main2.css" />
+    <link rel="stylesheet" href="/css/vali.css" />
+  </head>
+
+  <body>
+    <header class="sticky">
+      <!-- navbar 1 -->
+      <div class="navbar1 grid">
+        <div class="header__first grid">
+          <div class="row">
+            <div class="header__left col-3">
+              <!-- Logo -->
+              <a class="navbar-brand" href="/index.html">
+                <img
+                  src="/images/website/logo/BRONX LUGGAGE.png"
+                  alt="Avatar Logo"
+                />
+              </a>
+            </div>
+            <!-- Header right -->
+            <div class="header__right col-9">
+              <!-- Search -->
+              <div class="header__search">
+                <div class="input_search">
+                  <form
+                    class="input-group search-bar"
+                    action="/search"
+                    method="get"
+                    role="search"
+                  >
+                    <input
+                      id="search"
+                      type="search"
+                      name="q"
+                      value=""
+                      placeholder="Tìm kiếm sản phẩm... "
+                      class="input-group-field st-default-search-input search-text"
+                      autocomplete="off"
+                      required=""
+                    />
+                    <span class="input-group-btn">
+                      <button class="btn icon-fallback-text">
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </span>
+                  </form>
+                </div>
+                <div class="search_bx2"></div>
+              </div>
+              <!-- Account -->
+              <ul class="header__options">
+                <li>
+                  <a class="btns-login">Hotline: 1900 1888</a>
+                </li>
+                <li>
+                  <a href="./layout/login.html" class="btns-login--seperate"
+                    >Đăng nhập</a
+                  >
+                </li>
+                <li>
+                  <a href="./layout/register.html" class="btns-register"
+                    >Đăng ký</a
+                  >
+                </li>
+                <li>
+                  <button type="button" class="shopping-cart">
+                    <a href="/layout/shopping-cart.html">
+                      <i class="fa fa-shopping-cart"></i>
+                      <span class="count-holder">
+                        <span class="count"> (0) </span>
+                      </span>
+                    </a>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="">
+                    <i class="fa fa-heart"></i>
+                  </button>
+                </li>
+              </ul>
+              <!-- <div class="order-lg-2 nav-btns">
+                <button type="button" class="">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+                <button type="button" class="">
+                  <i class="fa fa-heart"></i>
+                </button>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of navbar1 -->
+
+      <!-- navbar 2-->
+      <div class="navbar2 navbar-expand-lg navbar-light bg-white">
+        <div class="container header__second">
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+            <ul class="navbar-nav mx-auto text-center">
+              <li class="nav-item px-2">
+                <a class="nav-link text-uppercase text-dark" href="/index.html"
+                  >TRANG CHỦ</a
+                >
+              </li>
+              <li class="nav-item dropdown px-2">
+                <a class="nav-link text-uppercase text-dark"
+                  >THƯƠNG HIỆU
+                  <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-content">
+                  <li><a class="dropdown-item">Ace.</a></li>
+                  <li>
+                    <a class="dropdown-item">Kamiliant</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">American Tourister</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Carlton</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Wenger</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Traveler's Choice</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Pacsafe</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Delsey Paris</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Samsonite</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown px-2 active">
+                <a
+                  class="nav-link text-uppercase text-dark"
+                  href="/layout/category/vali.html"
+                  >VALI
+                  <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-content">
+                  <li><a class="dropdown-item">Vali kéo nhựa</a></li>
+                  <li>
+                    <a class="dropdown-item">Vali kéo vải</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Vali kéo nhôm</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Vali size cabin</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Vali size trung</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Vali size đại</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Vali size trẻ em</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown px-2">
+                <a
+                  class="nav-link text-uppercase text-dark"
+                  href="/layout/category/balo.html"
+                  >BALO
+                  <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-content">
+                  <li><a class="dropdown-item">Balo laptop</a></li>
+                  <li>
+                    <a class="dropdown-item">Balo thời trang</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Balo doanh nhân</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Balo thể thao</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Balo du lịch</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Balo trẻ em</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown px-2">
+                <a
+                  class="nav-link text-uppercase text-dark"
+                  href="/layout/category/tui-xach.html"
+                  >TÚI XÁCH
+                  <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-content">
+                  <li><a class="dropdown-item">Túi xách tay</a></li>
+                  <li>
+                    <a class="dropdown-item">Túi xách đeo vai</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Túi xách đeo chéo</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Túi xách du lịch</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown px-2">
+                <a
+                  class="nav-link text-uppercase text-dark"
+                  href="/layout/category/phu-kien.html"
+                  >PHỤ KIỆN
+                  <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-content">
+                  <li><a class="dropdown-item">Ví</a></li>
+                  <li>
+                    <a class="dropdown-item">Gối cổ</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Bịt mắt</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Mũ/nón</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Bao trùm vali</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item px-2">
+                <a
+                  class="nav-link text-uppercase text-dark"
+                  href="/layout/category/all-products.html"
+                  >Tất cả sản phẩm</a
+                >
+              </li>
+              <li class="nav-item px-2 border-0">
+                <a
+                  class="nav-link text-uppercase text-dark"
+                  href="/layout/lienhe.html"
+                  >LIÊN HỆ</a
+                >
+              </li>
+              <div class="line"></div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End of navbar2 -->
+    </header>
+
+    <!-- Main content -->
+    <div class="main-content">
+      <!-- clearfix -->
+      <div class="clearfix"></div>
+
+      <!-- breadcrumb -->
+      <div class="breadcrumb-shop">
+        <div class="container">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd5">
+            <ol
+              class="breadcrumb breadcrumb-arrows"
+              itemscope=""
+              itemtype="http://schema.org/BreadcrumbList"
+            >
+              <li
+                itemprop="itemListElement"
+                itemscope=""
+                itemtype="http://schema.org/ListItem"
+              >
+                <a href="/" target="_self" itemprop="item"
+                  ><span itemprop="name">Trang chủ</span></a
+                >
+                <meta itemprop="position" content="1" />
+              </li>
+
+              <li
+                itemprop="itemListElement"
+                itemscope=""
+                itemtype="http://schema.org/ListItem"
+              >
+                <a href="./all-products.html" target="_self" itemprop="item">
+                  <span itemprop="name">Danh mục</span>
+                </a>
+                <meta itemprop="position" content="2" />
+              </li>
+
+              <li
+                class="active"
+                itemprop="itemListElement"
+                itemscope=""
+                itemtype="http://schema.org/ListItem"
+              >
+                <span
+                  itemprop="item"
+                  content="https://hol.com.vn/collections/vali"
+                  ><span itemprop="name">Vali</span></span
+                >
+                <meta itemprop="position" content="3" />
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- container -->
+      <div class="container">
+        <div class="row">
+          <div id="collection-body" class="wrap-collection-body clearfix">
+            <div class="col-md-3 col-sm-12 col-xs-12 sidebar-fix">
+              <div class="wrap-filter">
+                <div class="box_sidebar">
+                  <div class="block left-module">
+                    <div class="filter_xs">
+                      <div class="group-menu">
+                        <div class="title_block visible-sm visible-xs">
+                          Danh mục sản phẩm
+                          <span><i class="fa fa-angle-down"></i></span>
+                        </div>
+                        <div class="block_content layered-category">
+                          <div class="layered-content">
+                            <ul class="menuList-links">
+                              <li class="has-submenu level0 active">
+                                <a title="Vali"
+                                  >Vali
+                                  <span
+                                    class="icon-plus-submenu plus-nClick1"
+                                  ></span
+                                ></a>
+                                <ul class="submenu-links">
+                                  <li>
+                                    <a
+                                      title="Vali kéo nhựa"
+                                      >Vali kéo nhựa</a
+                                    >
+                                  </li>
+
+                                  <li>
+                                    <a
+                                      title="Vali kéo vải"
+                                      >Vali kéo vải</a
+                                    >
+                                  </li>
+
+                                  <li>
+                                    <a
+                                      title="Vali kéo nhôm"
+                                      >Vali kéo nhôm</a
+                                    >
+                                  </li>
+
+                                  <li>
+                                    <a
+                                      title="Vali size cabin"
+                                      >Vali size cabin</a
+                                    >
+                                  </li>
+
+                                  <li>
+                                    <a
+                                      title="Vali size trung"
+                                      >Vali size trung</a
+                                    >
+                                  </li>
+
+                                  <li>
+                                    <a
+                                      title="Vali size đại"
+                                      >Vali size đại</a
+                                    >
+                                  </li>
+
+                                  <li>
+                                    <a
+                                      title="Vali trẻ em"
+                                      >Vali trẻ em</a
+                                    >
+                                  </li>
+                                </ul>
+                              </li>
+
+                              <li class="has-submenu level0">
+                                <a href="#" title="Balo"
+                                  >Balo
+                                  <span
+                                    class="icon-plus-submenu plus-nClick1"
+                                  ></span
+                                ></a>
+                                <ul class="submenu-links">
+                                  <li>
+                                    <a
+                                      title="Balo laptop"
+                                      >Balo laptop</a
+                                    >
+                                  </li>
+
+                                  <li>
+                                    <a
+                                      title="Balo thời trang"
+                                      >Balo thời trang</a
+                                    >
+                                  </li>
+
+                                  <li>
+                                    <a
+                                      title="Balo doanh nhân"
+                                      >Balo doanh nhân</a
+                                    >
+                                  </li>
+
+                                  <li>
+                                    <a
+                                      title="Balo thể thao"
+                                      >Balo thể thao</a
+                                    >
+                                  </li>
+
+                                  <li>
+                                    <a
+                                      title="Balo du lịch"
+                                      >Balo du lịch</a
+                                    >
+                                  </li>
+
+                                  <li>
+                                    <a
+                                      title="Balo trẻ em"
+                                      >Balo trẻ em</a
+                                    >
+                                  </li>
+                                </ul>
+                              </li>
+
+                              <li class="has-submenu level0">
+                                <a title="Túi xách"
+                                  >Túi xách
+                                  <span
+                                    class="icon-plus-submenu plus-nClick1"
+                                  ></span
+                                ></a>
+                                <ul class="submenu-links">
+                                  <li>
+                                    <a
+                                      title="Túi xách tay"
+                                      >Túi xách tay</a
+                                    >
+                                  </li>
+
+                                  <li>
+                                    <a
+                                      title="Túi đeo vai"
+                                      >Túi đeo vai</a
+                                    >
+                                  </li>
+
+                                  <li>
+                                    <a
+                                      title="Túi đeo chéo"
+                                      >Túi đeo chéo</a
+                                    >
+                                  </li>
+
+                                  <li>
+                                    <a
+                                      title="Túi du lịch"
+                                      >Túi du lịch</a
+                                    >
+                                  </li>
+                                </ul>
+                              </li>
+
+                              <li class="has-submenu level0">
+                                <a title="Phụ kiện"
+                                  >Phụ kiện
+                                  <span
+                                    class="icon-plus-submenu plus-nClick1"
+                                  ></span
+                                ></a>
+                                <ul class="submenu-links">
+                                  <li>
+                                    <a title="Ví">Ví</a>
+                                  </li>
+
+                                  <li>
+                                    <a title="Gối cổ"
+                                      >Gối cổ</a
+                                    >
+                                  </li>
+
+                                  <li>
+                                    <a
+                                      title="Bịt mắt"
+                                      >Bịt mắt</a
+                                    >
+                                  </li>
+
+                                  <li>
+                                    <a
+                                      title="Mũ / nón"
+                                      >Mũ / nón</a
+                                    >
+                                  </li>
+
+                                  <li>
+                                    <a
+                                      title="Bao trùm vali"
+                                      >Bao trùm vali</a
+                                    >
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="layered">
+                        <p class="title_block visible-sm visible-xs">
+                          Bộ lọc sản phẩm
+                          <span><i class="fa fa-angle-down"></i></span>
+                        </p>
+                        <div class="block_content">
+                          <!-- ./filter brand -->
+
+                          <div class="group-filter" aria-expanded="true">
+                            <div class="layered_subtitle dropdown-filter">
+                              <span>Thương hiệu</span
+                              ><span class="icon-control"
+                                ><i class="fa fa-minus"></i
+                              ></span>
+                            </div>
+                            <div class="layered-content bl-filter filter-brand">
+                              <ul class="check-box-list">
+                                <li>
+                                  <input
+                                    type="checkbox"
+                                    id="data-brand-p1"
+                                    value="Wenger"
+                                    name="brand-filter"
+                                    data-vendor="(vendor:product**Wenger)"
+                                  />
+                                  <label for="data-brand-p1">Wenger</label>
+                                </li>
+
+                                <li>
+                                  <input
+                                    type="checkbox"
+                                    id="data-brand-p2"
+                                    value="Traveler's Choice"
+                                    name="brand-filter"
+                                    data-vendor="(vendor:product**Traveler's Choice)"
+                                  />
+                                  <label for="data-brand-p2">Traveler's Choice</label>
+                                </li>
+
+                                <li>
+                                  <input
+                                    type="checkbox"
+                                    id="data-brand-p5"
+                                    value="Delsey"
+                                    name="brand-filter"
+                                    data-vendor="(vendor:product**Delsey)"
+                                  />
+                                  <label for="data-brand-p5">Delsey</label>
+                                </li>
+
+                                <li>
+                                  <input
+                                    type="checkbox"
+                                    id="data-brand-p7"
+                                    value="Kamiliant"
+                                    name="brand-filter"
+                                    data-vendor="(vendor:product**Kamiliant)"
+                                  />
+                                  <label for="data-brand-p7">Kamiliant</label>
+                                </li>
+
+                                <li>
+                                  <input
+                                    type="checkbox"
+                                    id="data-brand-p8"
+                                    value="Samsonite"
+                                    name="brand-filter"
+                                    data-vendor="(vendor:product**Samsonite)"
+                                  />
+                                  <label for="data-brand-p8">Samsonite</label>
+                                </li>
+
+                                <li>
+                                  <input
+                                    type="checkbox"
+                                    id="data-brand-p9"
+                                    value="Carlton"
+                                    name="brand-filter"
+                                    data-vendor="(vendor:product**Carlton)"
+                                  />
+                                  <label for="data-brand-p9">Carlton</label>
+                                </li>
+
+                                <li>
+                                  <input
+                                    type="checkbox"
+                                    id="data-brand-p10"
+                                    value="Pacsafe"
+                                    name="brand-filter"
+                                    data-vendor="(vendor:product**Pacsafe)"
+                                  />
+                                  <label for="data-brand-p10">Pacsafe</label>
+                                </li>
+
+                                <li>
+                                  <input
+                                    type="checkbox"
+                                    id="data-brand-p13"
+                                    value="American Tourister"
+                                    name="brand-filter"
+                                    data-vendor="(vendor:product**American Tourister)"
+                                  />
+                                  <label for="data-brand-p13"
+                                    >American Tourister</label
+                                  >
+                                </li>
+
+                                <li>
+                                  <input
+                                    type="checkbox"
+                                    id="data-brand-p14"
+                                    value="ACE. Tokyo"
+                                    name="brand-filter"
+                                    data-vendor="(vendor:product**ACE. Tokyo)"
+                                  />
+                                  <label for="data-brand-p14">ACE. Tokyo</label>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- ./filter price -->
+                          <div class="group-filter" aria-expanded="true">
+                            <div class="layered_subtitle dropdown-filter">
+                              <span>Giá sản phẩm</span
+                              ><span class="icon-control"
+                                ><i class="fa fa-minus"></i
+                              ></span>
+                            </div>
+                            <div class="layered-content bl-filter filter-price">
+                              <ul class="check-box-list">
+                                <li>
+                                  <input
+                                    type="checkbox"
+                                    id="p1"
+                                    name="cc"
+                                    data-price="(price:product<=500000)"
+                                  />
+                                  <label for="p1">
+                                    <span>Dưới</span> 500,000₫
+                                  </label>
+                                </li>
+                                <li>
+                                  <input
+                                    type="checkbox"
+                                    id="p2"
+                                    name="cc"
+                                    data-price="((price:product>500000)&amp;&amp;(price:product<=1000000))"
+                                  />
+                                  <label for="p2">
+                                    500,000₫ - 1,000,000₫
+                                  </label>
+                                </li>
+                                <li>
+                                  <input
+                                    type="checkbox"
+                                    id="p3"
+                                    name="cc"
+                                    data-price="((price:product>1000000)&amp;&amp;(price:product<=3000000))"
+                                  />
+                                  <label for="p3">
+                                    1,000,000₫ - 3,000,000₫
+                                  </label>
+                                </li>
+                                <li>
+                                  <input
+                                    type="checkbox"
+                                    id="p4"
+                                    name="cc"
+                                    data-price="((price:product>3000000)&amp;&amp;(price:product<=5000000))"
+                                  />
+                                  <label for="p4">
+                                    3,000,000₫ - 5,000,000₫
+                                  </label>
+                                </li>
+                                <li>
+                                  <input
+                                    type="checkbox"
+                                    id="p5"
+                                    name="cc"
+                                    data-price="(price:product>=5000000)"
+                                  />
+                                  <label for="p5">
+                                    <span>Trên</span> 5,000,000₫
+                                  </label>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cột sản phẩm -->
+            <div class="col-md-9 col-sm-12 col-xs-12">
+              <div class="wrap-collection-title row">
+                <div class="heading-collection row">
+                  <div class="col-md-8 col-sm-12 col-xs-12">
+                    <h1 class="name-product">
+                      Vali
+                    </h1>
+                    
+                    <div class="alert-no-filter"></div>		
+                    
+                  </div>
+                  
+                  <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="option browse-tags">
+                      <label class="lb-filter hide" for="sort-by"
+                        >Sắp xếp theo:</label
+                      >
+                      <span class="custom-dropdown custom-dropdown--grey">
+                        <select
+                          id="choice"
+                          class="sort-by custom-dropdown__select"
+                        >
+                          <option value="manual">Mặc định</option>
+
+                          <option
+                            value="price-ascending"
+                            data-filter="&amp;sortby=(price:product=asc)"
+                          >
+                            Giá: Tăng dần
+                          </option>
+                          <option
+                            value="price-descending"
+                            data-filter="&amp;sortby=(price:product=desc)"
+                          >
+                            Giá: Giảm dần
+                          </option>
+                          <option
+                            value="title-ascending"
+                            data-filter="&amp;sortby=(title:product=asc)"
+                          >
+                            Tên: A-Z
+                          </option>
+                          <option
+                            value="title-descending"
+                            data-filter="&amp;sortby=(price:product=desc)"
+                          >
+                            Tên: Z-A
+                          </option>
+                        </select>
+                      </span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="row filter-here">
+                <div class="content-product-list product-list filter clearfix">
+                  <!-- Thể hiện sản phẩm ở đây -->
+                </div>
+                <div class="sortpagibar pagi clearfix text-center">
+                  <div class="pagination clearfix">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <ul>
+                      <li class="btn-prev-page" aria-label="Previ">
+                        <span aria-hidden="true">&laquo;</span>
+                      </li>
+                        <div class="list-page">
+                          <!-- <li class="page-node current">1</li>
+
+                          <li class="page-node">2</li>
+
+                          <li class="page-node">3</li>
+
+                          <li class="page-node">…</li>
+
+                          <li class="page-node">6</li> -->
+                        </div>
+                      <li class="btn-next-page" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </li>
+                    </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-dark py-5">
+      <div class="container">
+        <div class="row text-white g-4">
+          <div class="col-md-6 col-lg-3">
+            <a
+              class="text-uppercase text-decoration-none brand text-white"
+              href="/index.html"
+              >Bronx Luggage</a
+            >
+            <p class="text-white text-muted mt-3">
+              Với tiêu chí mang đến các sản phẩm từ các thương hiệu hành lý quốc
+              tế nổi tiếng, đẳng cấp và chất lượng, với mức giá hợp lý nhất đến
+              cho người Việt Nam. Sản phẩm tại Bronx Luggage đều là sản phẩm
+              chính hãng, độc quyền phân phối và được bảo hành quốc tế (lên đến
+              10 năm - hoặc vĩnh viễn), phù hợp với nhiều phân khúc khách hàng,
+              đa dạng kiểu dáng và màu sắc cho bạn dễ dàng lựa chọn.
+            </p>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-light">Hỗ trợ khách hàng</h5>
+            <ul class="list-unstyled">
+              <li class="my-3">
+                <a class="text-white text-decoration-none text-muted">
+                  <i class="fas fa-chevron-right me-1"></i> Giới thiệu
+                </a>
+              </li>
+              <li class="my-3">
+                <a class="text-white text-decoration-none text-muted">
+                  <i class="fas fa-chevron-right me-1"></i> Điều khoản và điều
+                  kiện
+                </a>
+              </li>
+              <li class="my-3">
+                <a class="text-white text-decoration-none text-muted">
+                  <i class="fas fa-chevron-right me-1"></i> Chính sách vận
+                  chuyển
+                </a>
+              </li>
+              <li class="my-3">
+                <a class="text-white text-decoration-none text-muted">
+                  <i class="fas fa-chevron-right me-1"></i> Chính sách thanh
+                  toán
+                </a>
+              </li>
+              <li class="my-3">
+                <a href="/layout/lienhe.html" class="text-white text-decoration-none text-muted">
+                  <i class="fas fa-chevron-right me-1"></i> Liên hệ
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-light mb-3">Thông tin liên hệ</h5>
+            <div
+              class="d-flex justify-content-start align-items-start my-2 text-muted"
+            >
+              <span class="me-3">
+                <i class="fas fa-map-marked-alt"></i>
+              </span>
+              <span class="fw-light">
+                106 Nguyễn Đình Chính, quận Phú Nhuận, thành phố Hồ Chí Minh
+              </span>
+            </div>
+            <div
+              class="d-flex justify-content-start align-items-start my-2 text-muted"
+            >
+              <span class="me-3">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="fw-light"> brox_luggage.support@gmail.com </span>
+            </div>
+            <div
+              class="d-flex justify-content-start align-items-start my-2 text-muted"
+            >
+              <span class="me-3">
+                <i class="fas fa-phone-alt"></i>
+              </span>
+              <span class="fw-light"> +9786 6776 236 </span>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-light mb-3">Follow Us</h5>
+            <div>
+              <ul class="list-unstyled d-flex">
+                <li>
+                  <a
+                    href="https://www.facebook.com/"
+                    class="text-white text-decoration-none text-muted fs-4 me-4"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/"
+                    class="text-white text-decoration-none text-muted fs-4 me-4"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/"
+                    class="text-white text-decoration-none text-muted fs-4 me-4"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.pinterest.com/"
+                    class="text-white text-decoration-none text-muted fs-4 me-4"
+                  >
+                    <i class="fab fa-pinterest"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- jquery -->
+    <script src="/js/jquery-3.6.0.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+    <script src="/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script type="module" src="/js/products/product-vali.js">
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.contact-box .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contact-right {
+    padding: 0 15px 15px 15px;
+    background-color: rgba(242,242,242,.08);
+    box-shadow: 0 5px 5px rgb(0 0 0 / 13%);
+    color: #000;
+}
+
+.contact-box {
+    background-color: #F3F3F3;
+}
+
+
+.title-text {
+    text-transform: uppercase;
+    font-size: 20px;
+    position: relative;
+    color: #fff;
+}
+
+.title-text span {
+    display: inline-block;
+    position: relative;
+    background-color: #ffbe00;
+    padding: 6px 20px;
+    transform: translateY(-13px);
+    -webkit-transform: translateY(-13px);
+}
+
+.title-text span::after {
+    border-right: 10px solid #646464;
+    border-top: 13px solid transparent;
+    content: "";
+    left: -10px;
+    position: absolute;
+    top: 0;
+}
+
+.contact-box .col-6 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 15px;
+    /* height: 600px; */
+    width: 576px;
+}
+
+.bg-white {
+    background-color: #fff!important;
+}
+
+.form-control {
+    border: 1px solid #ebebeb;
+}
+
+.form-group {
+    margin-bottom: 0.5rem;
+}
+
+.form-group.invalid .form-message {
+    color: #f33a58;
+  }
+  
+  .form-message {
+    font-size: 12px;
+    line-height: 1.6px;
+    padding: 4px 0 0;
+  }
+
+
+textarea .form-control {
+    height: auto;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.font-weight-bold {
+    font-weight: 700!important;
+}
+
+.p-2 {
+    padding: 0.5rem!important;
+}
+
+.mt-2, .my-2 {
+    margin-top: 0.5rem!important;
+}
+
+.position-relative {
+    position: relative!important;
+}
+
+.rounded {
+    border-radius: 0.25rem!important;
+}
+
+
+.btn-submit {
+    color: #fff;
+    background-color: #ff2d37;
+    border-radius: 50px;
+    border: none;
+    padding: 4px 2rem 4px 2rem;
+}
+
+.btn-submit:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+
+.container-map {
+    margin-top: 10px;
+}

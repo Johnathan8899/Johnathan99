@@ -1,0 +1,75 @@
+:root{
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink: #e5345b;
+    --white-color: #fff;
+    --black-color: rgb(39, 32, 32);
+    --text-color: #333;
+}
+
+.tabs{
+    display: flex;
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 0px;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+/* .tabs .line{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    border-radius: 15px;
+    background-color: #c23564;
+    transition: all 0.2s ease;
+} */
+
+.tab-item {
+    min-width: 80px;
+    padding: 16px 20px 11px 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #f15a29;
+    background-color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 5px solid transparent;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+.tab-item:hover {
+    opacity: 1;
+    background-color: rgba(194, 53, 100, 0.1);
+    border-color: #f15a29;
+}
+
+.tab-item.active {
+    opacity: 1;
+    border-bottom: 4px solid #f15a29;
+}
+
+
+.tab-content >.tab-pane{
+    display: none;
+    visibility: hidden;
+}
+
+.tab-content >.tab-pane.active{
+    display: block;
+    visibility: visible;
+}
+
+/* .fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+} */

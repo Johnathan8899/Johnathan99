@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel='icon' href='/images/website/logo/icon-logo.png'/>
+    <link rel='icon' href='/images/website/logo/icon-logo.png'/>
+    <title>Bronx Luggage</title>
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Normalize css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="/css/main2.css" />
+    <link rel="stylesheet" href="/css/vali.css" />
+    <link rel="stylesheet" href="/css/login.css">
+  </head>
+
+  <body>
+    <header class="">
+      <!-- navbar 1 -->
+      <div class="navbar1 grid">
+        <div class="header__first grid">
+          <div class="row">
+            <div class="header__left col-3">
+              <!-- Logo -->
+              <a class="navbar-brand" href="/index.html">
+                <img
+                  src="/images/website/logo/BRONX LUGGAGE.png"
+                  alt="Avatar Logo"
+                />
+              </a>
+            </div>
+            <!-- Header right -->
+            <div class="header__right col-9">
+              <!-- Search -->
+              <div class="header__search">
+                <div class="input_search">
+                  <form
+                    class="input-group search-bar"
+                    action="/search"
+                    method="get"
+                    role="search"
+                  >
+                    <input
+                      id="search"
+                      type="search"
+                      name="q"
+                      value=""
+                      placeholder="Tìm kiếm sản phẩm... "
+                      class="input-group-field st-default-search-input search-text"
+                      autocomplete="off"
+                      required=""
+                    />
+                    <span class="input-group-btn">
+                      <button class="btn icon-fallback-text">
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </span>
+                  </form>
+                </div>
+                <div class="search_bx2"></div>
+              </div>
+              <!-- Account -->
+              <ul class="header__options">
+                <li>
+                  <a class="btns-login">Hotline: 1900 1888</a>
+                </li>
+                <li>
+                  <a href="/layout/login.html" class="btns-login--seperate"
+                    >Đăng nhập</a
+                  >
+                </li>
+                <li>
+                  <a href="/layout/register.html" class="btns-register"
+                    >Đăng ký</a
+                  >
+                </li>
+                <li>
+                  <button type="button" class="shopping-cart">
+                    <a href="/layout/shopping-cart.html">
+                      <i class="fa fa-shopping-cart"></i>
+                      <span class="count-holder">
+                        <span class="count"> (0) </span>
+                      </span>
+                    </a>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="">
+                    <i class="fa fa-heart"></i>
+                  </button>
+                </li>
+              </ul>
+              <!-- <div class="order-lg-2 nav-btns">
+                <button type="button" class="">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+                <button type="button" class="">
+                  <i class="fa fa-heart"></i>
+                </button>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of navbar1 -->
+
+      <!-- navbar 2-->
+      <div class="navbar2 navbar-expand-lg navbar-light bg-white">
+        <div class="container header__second">
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+            <ul class="navbar-nav mx-auto text-center">
+              <li class="nav-item px-2 active">
+                <a class="nav-link text-uppercase text-dark" href="/index.html"
+                  >TRANG CHỦ</a
+                >
+              </li>
+              <li class="nav-item dropdown px-2">
+                <a class="nav-link text-uppercase text-dark"
+                  >THƯƠNG HIỆU
+                  <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-content">
+                  <li><a class="dropdown-item">Ace.</a></li>
+                  <li>
+                    <a class="dropdown-item">Kamiliant</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">American Tourister</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Carlton</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Wenger</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Traveler's Choice</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Pacsafe</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Delsey Paris</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Samsonite</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown px-2">
+                <a
+                  class="nav-link text-uppercase text-dark"
+                  href="/layout/category/vali.html"
+                  >VALI
+                  <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-content">
+                  <li><a class="dropdown-item">Vali kéo nhựa</a></li>
+                  <li>
+                    <a class="dropdown-item">Vali kéo vải</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Vali kéo nhôm</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Vali size cabin</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Vali size trung</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Vali size đại</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Vali size trẻ em</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown px-2">
+                <a
+                  class="nav-link text-uppercase text-dark"
+                  href="/layout/category/balo.html"
+                  >BALO
+                  <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-content">
+                  <li><a class="dropdown-item">Balo laptop</a></li>
+                  <li>
+                    <a class="dropdown-item">Balo thời trang</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Balo doanh nhân</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Balo thể thao</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Balo du lịch</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Balo trẻ em</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown px-2">
+                <a
+                  class="nav-link text-uppercase text-dark"
+                  href="/layout/category/tui-xach.html"
+                  >TÚI XÁCH
+                  <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-content">
+                  <li><a class="dropdown-item">Túi xách tay</a></li>
+                  <li>
+                    <a class="dropdown-item">Túi xách đeo vai</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Túi xách đeo chéo</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Túi xách du lịch</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown px-2">
+                <a
+                  class="nav-link text-uppercase text-dark"
+                  href="/layout/category/phu-kien.html"
+                  >PHỤ KIỆN
+                  <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-content">
+                  <li><a class="dropdown-item">Ví</a></li>
+                  <li>
+                    <a class="dropdown-item">Gối cổ</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Bịt mắt</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Mũ/nón</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Bao trùm vali</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item px-2">
+                <a
+                  class="nav-link text-uppercase text-dark"
+                  href="/layout/category/all-products.html"
+                  >Tất cả sản phẩm</a
+                >
+              </li>
+              <li class="nav-item px-2 border-0">
+                <a
+                  class="nav-link text-uppercase text-dark"
+                  href="/layout/lienhe.html"
+                  >LIÊN HỆ</a
+                >
+              </li>
+              <div class="line"></div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End of navbar2 -->
+    </header>
+
+    <!-- Main content -->
+    <div id="main">
+      <form action="" method="POST" class="form" id="form-1">
+          <h3 class="heading">Đăng nhập</h3>
+          <!-- <p class="desc">Đăng ký nhanh để nhận những ưu đãi cùng cửa hàng ❤️</p> -->
+      
+          <div class="spacer"></div>
+          <!-- <div class="form-group">
+            <label for="fullname" class="form-label">Đmail / Số điện thoại</label>
+            <input id="fullname" name="fullname" type="text" placeholder="VD: Nguyễn Văn Hiễn" class="form-control">
+            <span class="form-message"></span>
+          </div> -->
+      
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
+            <span class="form-message"></span>
+          </div>
+      
+          <div class="form-group">
+            <label for="password" class="form-label">Mật khẩu</label>
+            <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+            <span class="form-message"></span>
+          </div>
+          <!--         
+          <div class="form-group">
+            <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
+            <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu" type="password" class="form-control">
+            <span class="form-message"></span>
+          </div> -->
+          <div class="form-submit">Đăng nhập</div>
+          <div class="form-group">
+              <ul class="form-options">
+                  <li>
+                      <a href="" class="form-password">Quên mật khẩu</a>
+                  </li>
+                  <li>
+                      <a href="register.html" class="form-register">Đăng ký tài khoản mới</a>
+                  </li>
+              </ul>
+
+            </div>
+        </form>
+      </form> 
+  </div>
+
+    <!-- footer -->
+    <footer class="bg-dark py-5">
+      <div class="container">
+        <div class="row text-white g-4">
+          <div class="col-md-6 col-lg-3">
+            <a
+              class="text-uppercase text-decoration-none brand text-white"
+              href="/index.html"
+              >Bronx Luggage</a
+            >
+            <p class="text-white text-muted mt-3">
+              Với tiêu chí mang đến các sản phẩm từ các thương hiệu hành lý quốc
+              tế nổi tiếng, đẳng cấp và chất lượng, với mức giá hợp lý nhất đến
+              cho người Việt Nam. Sản phẩm tại Bronx Luggage đều là sản phẩm
+              chính hãng, độc quyền phân phối và được bảo hành quốc tế (lên đến
+              10 năm - hoặc vĩnh viễn), phù hợp với nhiều phân khúc khách hàng,
+              đa dạng kiểu dáng và màu sắc cho bạn dễ dàng lựa chọn.
+            </p>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-light">Hỗ trợ khách hàng</h5>
+            <ul class="list-unstyled">
+              <li class="my-3">
+                <a class="text-white text-decoration-none text-muted">
+                  <i class="fas fa-chevron-right me-1"></i> Giới thiệu
+                </a>
+              </li>
+              <li class="my-3">
+                <a class="text-white text-decoration-none text-muted">
+                  <i class="fas fa-chevron-right me-1"></i> Điều khoản và điều
+                  kiện
+                </a>
+              </li>
+              <li class="my-3">
+                <a class="text-white text-decoration-none text-muted">
+                  <i class="fas fa-chevron-right me-1"></i> Chính sách vận
+                  chuyển
+                </a>
+              </li>
+              <li class="my-3">
+                <a class="text-white text-decoration-none text-muted">
+                  <i class="fas fa-chevron-right me-1"></i> Chính sách thanh
+                  toán
+                </a>
+              </li>
+              <li class="my-3">
+                <a href="/layout/lienhe.html" class="text-white text-decoration-none text-muted">
+                  <i class="fas fa-chevron-right me-1"></i> Liên hệ
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-light mb-3">Thông tin liên hệ</h5>
+            <div
+              class="d-flex justify-content-start align-items-start my-2 text-muted"
+            >
+              <span class="me-3">
+                <i class="fas fa-map-marked-alt"></i>
+              </span>
+              <span class="fw-light">
+                106 Nguyễn Đình Chính, quận Phú Nhuận, thành phố Hồ Chí Minh
+              </span>
+            </div>
+            <div
+              class="d-flex justify-content-start align-items-start my-2 text-muted"
+            >
+              <span class="me-3">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="fw-light"> brox_luggage.support@gmail.com </span>
+            </div>
+            <div
+              class="d-flex justify-content-start align-items-start my-2 text-muted"
+            >
+              <span class="me-3">
+                <i class="fas fa-phone-alt"></i>
+              </span>
+              <span class="fw-light"> +9786 6776 236 </span>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-light mb-3">Follow Us</h5>
+            <div>
+              <ul class="list-unstyled d-flex">
+                <li>
+                  <a
+                    href="https://www.facebook.com/"
+                    class="text-white text-decoration-none text-muted fs-4 me-4"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/"
+                    class="text-white text-decoration-none text-muted fs-4 me-4"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/"
+                    class="text-white text-decoration-none text-muted fs-4 me-4"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.pinterest.com/"
+                    class="text-white text-decoration-none text-muted fs-4 me-4"
+                  >
+                    <i class="fab fa-pinterest"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- jquery -->
+    <script src="/js/jquery-3.6.0.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+    <script src="/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script src="../js/login.js"></script>
+    <script>
+         Validator({
+             form: '#form-1',
+             errorSelector: '.form-message',
+             rules: [
+                 // Validator.isRequired('#fullname'),
+                 Validator.isRequired('#email'),
+                 Validator.isEmail('#email'),
+                 Validator.minLength('#password', 6),
+                 Validator.isRequired('#password_confirmation'),
+                 // Validator.isConfirm('#password_confirmation', function(){
+                 //     return document.querySelector('#form-1 #password').value;
+                 // }, 'Mật khẩu nhập lại không chính xác'),
+             ]
+         });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink: #e5345b;
+    --white-color: #fff;
+    --black-color: rgb(39, 32, 32);
+    --text-color: #333;
+}
+
+/* ... nổi bật + xem thêm */
+
+
+/* Sản phẩm mới */
+
+.product-item {
+    border: 1px solid rgb(219, 219, 219);
+}
+
+.product-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.btns {
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    font-size: 15px;
+    font-weight: 300;
+    transition: all 0.3s ease-in-out;
+}
+
+.btns button {
+    border: none;
+    background-color: rgb(39, 39, 39);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.btns button:hover {
+    color: var(--pink);
+}
+
+.product-img:hover .btns {
+    bottom: 0;
+}
+
+.heart-icon {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    font-size: 18px;
+}
+
+.product-type {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.product-name {
+    transition: all 0.3s all ease-in-out;
+}
+
+.product-name:hover {
+    color: var(--pink)!important;
+}
+
+.product-price {
+    color: var(--pink) ;
+}
+
+.rating {
+    font-size: 13px;
+}
+
+.product-item {
+    width: 200px;
+}
+
+#present-product {
+    background-color: #E6E6E6;
+}
+
+#present-product .row img {
+    width: 200px;
+    height: 180px;
+    margin-left: 50px;
+}
+
+#present-product .row {
+    background-color: #E6E6E6;   
+}
+
+#present-product .row p{
+    text-align: center;
+}

@@ -1,0 +1,236 @@
+a {
+    color: #272727;
+    text-decoration: none;
+    outline: none;
+    /* -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    transition: opacity 150ms linear, color 150ms linear, background 150ms linear; */
+}
+
+
+.pro-loop .product-image .product-sale {
+    top: 10px;
+    left: 10px;
+    /* color: #f94c43; */
+    display: none;
+}
+
+.pro-loop .product-sale span {
+    color: #f94c43;
+}
+
+.pro-loop a {
+    display: block;
+}
+
+.pro-loop .product-image .product-sale, .pro-loop .product-image .sold-out {
+    position: absolute;
+    font-size: 12px;
+    line-height: 1;
+    padding: 5px 10px;
+    font-weight: bold;
+    z-index: 9;
+    color: #272727;
+    background: #ff0;
+}
+
+.pro-loop .product-image img:hover {
+    transform: scale(1.1);
+}
+
+.pro-loop .product-image img {
+    transition: transform .2s;
+}
+
+.pro-loop .product-image picture {
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.pro-loop .product-image img {
+    transition: transform .2s;
+    width: 213px;
+}
+
+/* Button */
+.pro-loop .product-image {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.pro-loop .product-image .button-add {
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    left: 0;
+    bottom: -10%;
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+
+.pro-loop:hover .product-image .button-add {
+    opacity: 1;
+    visibility: visible;
+    bottom: 0;
+}
+
+
+.pro-loop .product-image button, .box-pro-prices + button {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 11px;
+    border: 0;
+    background: #191919;
+    color: #fff;
+    width: 100%;
+    padding: 8px 5px;
+    margin-right: 5px;
+    outline: none;
+    transition: all ease 0.5s;
+}
+
+.pro-loop .button-add button:hover {
+    color: var(--pink);
+}
+
+/* class="product-detail */
+
+/* Detail */
+.pro-loop .product-detail {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.product-detail .box-pro-detail {
+    z-index: 9;
+    width: 100%;
+}
+
+.product-detail .box-pro-detail .product-brand a {
+    color: #777777;
+}
+
+.product-detail .box-pro-detail .product-brand {
+    margin: 0 0 5px;
+}
+
+.pro-loop .product-detail h3 {
+    margin: 0 0 5px;
+    font-size: 15px;
+    position: relative;
+}
+
+.pro-loop .product-detail h3 a {
+    color: #272727;
+    line-height: 16px;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+
+/* price */
+.box-pro-prices .pro-price.highlight {
+    color: #f94c43;
+}
+
+.box-pro-prices .pro-price {
+    font-size: 15px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.box-pro-prices .pro-price .pro-price-del {
+    color: #939393;
+    font-size: 13px;
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+/* Slider Owl-Carousel */
+
+#home-slider .slider-owl button {
+    top: 40%!important;
+}
+
+.owl-carousel .owl-item img {
+    transform-style: preserve-3d;
+}
+
+
+/* Prev Next button Owl-Carousel */
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+    position:absolute;
+    top: 30%;
+    font-size: 25px!important;
+    background-color: #fff!important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%!important;
+    box-shadow: 0 2px 10px rgb(54 54 54 / 15%);
+}
+
+.owl-nav .owl-prev {
+    left: 0;
+}
+
+.owl-nav .owl-prev:hover,
+.owl-nav .owl-next:hover {
+    color: #333!important;
+}
+
+.owl-nav .owl-next {
+    right: 0;
+}
+
+.owl-carousel {
+    z-index: 0;
+}
+
+
+/* Dots Owl-Carousel */
+.owl-dots .active span{
+    width: 30px !important;
+}
+
+/* logo Product */
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#logo__brand .container-fluid p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 32px;
+}
+
+#logo__brand .col-md-brand {
+    padding: 0;
+    float: left;
+    max-width: 11%;
+}
+
+#logo__brand .col-md-brand img {
+    max-width: 100%;
+    /* margin-left: 30px; */
+}
+
+
