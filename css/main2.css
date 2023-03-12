@@ -19,7 +19,7 @@ html {
     box-sizing: border-box;
 }
 
-.grid {
+/* .grid {
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
@@ -32,7 +32,7 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
-}
+} */
 
 .clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical>.btn-group:before, .btn-group-vertical>.btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-footer:before, .modal-footer:after {
     display: table;
@@ -41,7 +41,7 @@ html {
 
 /* responsive */
 
-@media(max-width:1200px) {
+/* @media(max-width:1200px) {
     .navbar1 .header__options .phoneContact,
     .navbar1 .header__options .btns-login--seperate,
     .navbar1 .header__options .btns-register
@@ -52,7 +52,7 @@ html {
         display: inline-block;
         float: left;
     }
-}
+} */
 
 
 /* Header_first */
@@ -200,16 +200,17 @@ html {
 /* Header right */
 
 .header__right {
-    height: 60px;
+    padding-left: 200px;
+    line-height: 60px;
+}
+
+.header__options {
     line-height: 60px;
 }
 
 
-.header__right {
-    display: flex;
-}
 
-.header__options {
+.header__options ul {
     display: flex;
 }
 
@@ -625,3 +626,34 @@ footer a:hover{
 .product-image a picture {
     cursor: poiner!important;
 }
+
+/* Responsive: */
+@media screen and (max-width: 768px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    .navbar1 {
+        float: right;
+    }
+    .navbar2 {
+        float: left;
+        padding-top: 10px;
+    }
+    #home-slider {
+        margin-top: 64px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1200px){
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+}
+

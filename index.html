@@ -32,22 +32,20 @@
   <body>
     <header class="sticky">
       <!-- navbar 1 -->
-      <div class="navbar1 grid">
-        <div class="header__first grid">
+      <div class="navbar1">
+        <div class="header__first">
           <div class="row">
-            <div class="header__left col-3">
+            <div class="header__left col-1">
               <!-- Logo -->
               <a class="navbar-brand" href="./index.html">
                 <img
-                  src="/images/website/logo/BRONX LUGGAGE.png"
+                  src="/images/website/logo/BRONX LUGGAGE2.png"
                   alt="Avatar Logo"
                 />
               </a>
             </div>
-            <!-- Header right -->
-            <div class="header__right col-9">
               <!-- Search -->
-              <div class="header__search">
+            <div class="header__right header__search col-6 hide-on-mobile">
                 <div class="input_search">
                   <form
                     class="input-group search-bar"
@@ -72,10 +70,11 @@
                     </span>
                   </form>
                 </div>
-                <div class="search_bx2"></div>
-              </div>
-              <!-- Account -->
-              <ul class="header__options">
+            <div class="search_bx2 hide-on-mobile"></div>
+            </div>
+            <!-- Header options -->
+            <div class="header__options col-5 hide-on-mobile-tablet">
+              <ul>
                 <li>
                   <a class="phoneContact">Hotline: 1900 1888</a>
                 </li>
@@ -105,14 +104,6 @@
                   </button>
                 </li>
               </ul>
-              <!-- <div class="order-lg-2 nav-btns">
-                <button type="button" class="">
-                  <i class="fa fa-shopping-cart"></i>
-                </button>
-                <button type="button" class="">
-                  <i class="fa fa-heart"></i>
-                </button>
-              </div> -->
             </div>
           </div>
         </div>
@@ -301,7 +292,7 @@
       <!-- Logo brand -->
       <section id="logo__brand">
         <div class="container-fluid">
-          <p>thương hiệu hàng đầu thế giới</p>
+          <p>Thương hiệu hàng đầu thế giới</p>
           <div class="list-gallery-brand clearfix"></div>
         </div>
       </section>
@@ -340,7 +331,7 @@
       <!-- End of new and Sale product -->
 
       <!-- Present Product -->
-      <section class="box-present">
+      <section class="box-present hide-on-mobile">
         <div class="title">
           <h2 class="position-relative d-inline-block">
             SẢN PHẨM HIỆN CÓ CỦA BRONX LUGGAGE
@@ -451,7 +442,7 @@
       <!-- end of blogs -->
 
       <!-- offers -->
-      <section id="offers" class="py-5">
+      <section id="offers" class="hide-on-mobile py-5">
         <div class="container">
           <div
             class="row d-flex align-items-center justify-content-centerjustify-content-lg-start text-lg-start"
@@ -669,7 +660,7 @@
         responsiveClass: true,
         responsive: {
           0: {
-            items: 1,
+            items: 2,
           },
           768: {
             item: 2,

@@ -46,7 +46,7 @@ function loadProducts(all_products) {
       var {id, name, image, brand, price, category, SKU, inventory, size, color, description, status, incart, type} = item;
       let priceFormat = _this.formatter(price);
         html += `
-                <div class="col-md-3 col-sm-6 col-xs-6 pro-loop col-4 current-product">
+                <div class="col-md-3 col-sm-6 col-xs-6 pro-loop col-6 current-product">
                   <div class="product-block product-resize fixheight" 
                   data-id="${id}" 
                   data-category="${category}" 

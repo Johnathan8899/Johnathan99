@@ -1449,7 +1449,7 @@ const app = {
     let html = "";
     all_products.map(function (item, index) {
       let { id, name, price, brand, description, image, category, status, SKU, inventory, size, color } = item;
-      price = _this.formatter(price);
+      let priceFormat = _this.formatter(price);
 
       // Trường hợp category là gì thì mới show sẩn phẩm đó
         html = `
@@ -1492,8 +1492,8 @@ const app = {
                                     </a>
                                 </h3>
                                 <div class="box-pro-prices">	
-                                    <p class="pro-price highlight">${price}
-                                        <span class="pro-price-del"><del class="compare-price">${price}</del></span>
+                                    <p class="pro-price highlight">${priceFormat}
+                                        <span class="pro-price-del"><del class="compare-price">${priceFormat}</del></span>
                                     </p>
                                 </div>
                             </div>
@@ -1652,14 +1652,14 @@ const app = {
   },
   
 
-  start: function () {
+  start: function() {
     this.renderProducts();
     this.btnDetailProduct();
     this.renderSlideMenu();
     this.renderLogo();
     this.searchProduct();
     this.renderBlogs();
-    this.sendEmailJs();
+    // this.sendEmailJs();
   },
 };
 

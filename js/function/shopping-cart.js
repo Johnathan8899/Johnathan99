@@ -33,6 +33,7 @@ const app = {
 
   //  Render layout cart
   renderLayoutCart: function () {
+    document.querySelector('.count-holder .count').textContent = cartNumbers;
     const _this = this;
     let html = "";
     const tableCart = document.querySelector(".table-cart");
@@ -40,8 +41,8 @@ const app = {
     if (cartItems) {
       Object.values(cartItems).map((item) => {
         var {name, price, type, image, inCart} = item;
-        // Tổng tiền của sản phẩm có nhiều số lượgn
-        totalPerpage = _this.formatter(price * inCart); 
+        // Tổng tiền của sản phẩm có nhiều số lượng
+        totalPerpage = _this.formatter(price * inCart);
         price = _this.formatter(price);
             html += `
             <div class="item line-item line-item-container">
@@ -124,6 +125,7 @@ const app = {
                 </div>
             </div>
         `;
+        
   },
 
   // Btn remove product
@@ -151,26 +153,30 @@ const app = {
             document.querySelector('.numberCarts').innerHTML = `Bạn đang có ${cartNumbers} sản phẩm trong giỏ hàng`;
           }
         });
-
       }
     });
   },
 
   // Btn minus plus 
   quantityProduct: function() {
+    const _this = this;
     let cartItemsArr =  Object.values(cartItems);
-
+    console.log(cartItems);
+    console.log(cartItemsArr);
     const btnsMinus = document.querySelectorAll('.qty-minus.qty-btn');
     const btnsPlus = document.querySelectorAll('.qty-plus.qty-btn');
     
     btnsMinus.forEach(function(btn, index) {
       var quantityProduct = $(btn).parent().find('input').val(); 
       btn.onclick = function() {
-        if (quantityProduct > 1 ) {
- 
-        }
+        console.log(cartItemsArr[index].inCart--);
+        // _this.renderLayoutCart();
+      localStorage.setItem('inCart', JSON.stringify(cartItemsArr[index].inCart));
+
       }
     })
+
+    
 
   },
 

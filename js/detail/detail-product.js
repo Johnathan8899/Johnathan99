@@ -12,7 +12,7 @@ let inventory = localStorage.getItem('inventory');
 let size = localStorage.getItem('size');
 let color = localStorage.getItem('color');
 let description = localStorage.getItem('description');
-let incart = localStorage.getItem('inCart');
+let inCart = localStorage.getItem('inCart');
 let type = localStorage.getItem('type');
 let totalCost = localStorage.getItem('totalCost');
 
@@ -289,7 +289,7 @@ const app = {
           document.querySelector('.count-holder .count').textContent = 1;
         }
         // Product lúc này là all_products[index];
-        _this.setItem(product);
+        // _this.setItem(product);
     },
   
     setItem: function(product) {
@@ -304,12 +304,12 @@ const app = {
               [product.name]: product
             }
           }
-            cartItems[product.name].incart += 1;
-            product.incart = 1;
+            cartItems[product.name].inCart += 1;
+            product.inCart = 1;
         // Nếu như object carItems == null thì hàm sẽ chạy sẽ giữ nguyên 1 và không cộng thêm
         } else {
-          product.incart = 1;
-          cartItems = {
+            product.inCart = 1;
+            cartItems = {
             [product.name]: product
           }
         }
@@ -319,7 +319,7 @@ const app = {
     },
   
     btnAddToCart: function() {
-        incart = parseInt(incart);
+        inCart = parseInt(inCart);
         let product = {
             id,
             name,
@@ -339,13 +339,11 @@ const app = {
                     cartItems = {
                       ...cartItems,
                       [name]: product
-                }}
-                
-                productNumbers 
-                += 1;
-                // cartItems[name].incart += 1;
-                product.incart += 1;
-                totalCost = parseInt(totalCost) + parseInt(price);
+                }
+            }
+                    productNumbers += 1;
+                    cartItems[product.name].inCart += 1;
+                    totalCost = parseInt(totalCost) + parseInt(price);
             }
             if (cartItems == null){
                 cartItems = {};
@@ -355,16 +353,16 @@ const app = {
                       [name]: product
                     }}
                 totalCost = parseInt(price);
-                console.log(typeof totalCost);
-                productNumbers += 1;
-                cartItems[name].incart = 1;
-                product.incart = 1;
-
+                productNumbers = 1;
+                cartItems[product.name].inCart = 1;
             }
+            document.querySelector('.count-holder .count').textContent = productNumbers;
             localStorage.setItem('productsInCart', JSON.stringify(cartItems));
             localStorage.setItem('cartNumbers', JSON.stringify(productNumbers));
             localStorage.setItem('totalCost', JSON.stringify(totalCost));
+            _this.setItem(product);
             }         
+
      },
   
     totalCost: function(product) {

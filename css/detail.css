@@ -347,3 +347,12 @@ a .btn-check,
 .related-product-list .pro-loop {
     width: 20%;
 }
+
+@media screen and (max-width: 768px) {
+    .related-product-list .col-xs-6 {
+        width: 50%;
+    }
+    #product {
+        margin-top: 50px;
+    }
+}

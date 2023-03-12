@@ -33,22 +33,20 @@
   <body>
     <header class="sticky">
       <!-- navbar 1 -->
-      <div class="navbar1 grid">
-        <div class="header__first grid">
+      <div class="navbar1">
+        <div class="header__first">
           <div class="row">
-            <div class="header__left col-3">
+            <div class="header__left col-1">
               <!-- Logo -->
               <a class="navbar-brand" href="/index.html">
                 <img
-                  src="/images/website/logo/BRONX LUGGAGE.png"
+                  src="/images/website/logo/BRONX LUGGAGE2.png"
                   alt="Avatar Logo"
                 />
               </a>
             </div>
-            <!-- Header right -->
-            <div class="header__right col-9">
               <!-- Search -->
-              <div class="header__search">
+            <div class="header__right header__search col-6 hide-on-mobile">
                 <div class="input_search">
                   <form
                     class="input-group search-bar"
@@ -73,20 +71,21 @@
                     </span>
                   </form>
                 </div>
-                <div class="search_bx2"></div>
-              </div>
-              <!-- Account -->
-              <ul class="header__options">
+            <div class="search_bx2 hide-on-mobile"></div>
+            </div>
+            <!-- Header options -->
+            <div class="header__options col-5 hide-on-mobile">
+              <ul>
                 <li>
-                  <a class="btns-login">Hotline: 1900 1888</a>
+                  <a class="phoneContact">Hotline: 1900 1888</a>
                 </li>
                 <li>
-                  <a href="./layout/login.html" class="btns-login--seperate"
+                  <a href="/layout/login.html" class="btns-login--seperate"
                     >Đăng nhập</a
                   >
                 </li>
                 <li>
-                  <a href="./layout/register.html" class="btns-register"
+                  <a href="/layout/register.html" class="btns-register"
                     >Đăng ký</a
                   >
                 </li>
@@ -106,14 +105,6 @@
                   </button>
                 </li>
               </ul>
-              <!-- <div class="order-lg-2 nav-btns">
-                <button type="button" class="">
-                  <i class="fa fa-shopping-cart"></i>
-                </button>
-                <button type="button" class="">
-                  <i class="fa fa-heart"></i>
-                </button>
-              </div> -->
             </div>
           </div>
         </div>
@@ -122,7 +113,7 @@
 
       <!-- navbar 2-->
       <div class="navbar2 navbar-expand-lg navbar-light bg-white">
-        <div class="container header__second">
+        <div class="container header__second bg-white">
           <button
             class="navbar-toggler border-0"
             type="button"
@@ -133,7 +124,7 @@
           </button>
           <div class="collapse navbar-collapse order-lg-1" id="navMenu">
             <ul class="navbar-nav mx-auto text-center">
-              <li class="nav-item px-2">
+              <li class="nav-item px-2 active">
                 <a class="nav-link text-uppercase text-dark" href="/index.html"
                   >TRANG CHỦ</a
                 >
@@ -269,7 +260,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item px-2 active">
+              <li class="nav-item px-2">
                 <a
                   class="nav-link text-uppercase text-dark"
                   href="/layout/category/all-products.html"
@@ -333,8 +324,8 @@
                 <div class="heading-title text-center">
                   <h2>Sản phẩm liên quan</h2>
                 </div>
-                <div class="related-product-list">
-
+                <div class="related-product-list row">
+                  
                 </div>
               </div>
             </div>
